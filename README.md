@@ -1,11 +1,11 @@
-# cfDNApipe
+# cfRNApipe
 
 * [Introduction](#introduction)
 * [Section 1: Installation Tutorial](#section-1-installation-tutorial)
     * [Section 1.1: System requirement](#section-11-system-requirement)
     * [Section 1.2: Create environment and Install Dependencies](#section-12-create-environment-and-install-dependencies)
     * [Section 1.3: Activate Environment and Use cfDNApipe](#section-13-activate-environment-and-use-cfdnapipe)
-* [Section 2: cfDNApipe Highlights](#section-2-cfdnapipe-highlights)
+* [Section 2: cfRNApipe Highlights](#section-2-cfdnapipe-highlights)
     * [Section 2.1: Dataflow Graph for WGS and WGBS Data Processing](#section-21-dataflow-graph-for-wgs-and-wgbs-data-processing)
     * [Section 2.2: Reference Auto Download and Building](#section-22-reference-auto-download-and-building)
     * [Section 2.3: Output Folder Arrangement](#section-23-output-folder-arrangement)
