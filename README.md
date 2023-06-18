@@ -4,13 +4,15 @@
 * [Section 1: Installation Tutorial](#section-1-installation-tutorial)
     * [Section 1.1: System requirement](#section-11-system-requirement)
     * [Section 1.2: Create environment and Install Dependencies](#section-12-create-environment-and-install-dependencies)
-    * [Section 1.3: Activate Environment and Use cfDNApipe](#section-13-activate-environment-and-use-cfdnapipe)
+    * [Section 1.3: Activate Environment and Use cfDNApipe](#section-13-activate-environment-and-use-cfrnapipe)
+      
 * [Section 2: cfRNApipe Highlights](#section-2-cfdnapipe-highlights)
     * [Section 2.1: Dataflow Graph for WGS and WGBS Data Processing](#section-21-dataflow-graph-for-wgs-and-wgbs-data-processing)
     * [Section 2.2: Reference Auto Download and Building](#section-22-reference-auto-download-and-building)
     * [Section 2.3: Output Folder Arrangement](#section-23-output-folder-arrangement)
     * [Section 2.4: Breakpoint Detection](#section-24-breakpoint-detection)
     * [Section 2.5: Other Mechanisms](#section-25-other-mechanisms)
+      
 * [Section 3: A Quick Tutorial for Analysis WGBS data](#section-3-a-quick-tutorial-for-analysis-wgbs-data)
     * [Section 3.1: Set Global Reference Configures](#section-31-set-global-reference-configures)
     * [Section 3.2: Execute build-in WGBS Analysis Pipeline](#section-32-execute-build-in-wgbs-analysis-pipeline)
@@ -41,9 +43,9 @@
 
 ## Introduction
 
-**cfDNApipe(<u>c</u>ell <u>f</u>ree <u>DNA</u> <u>Pipe</u>line)** is an integrated pipeline for analyzing [cell-free DNA](https://en.wikipedia.org/wiki/Circulating_free_DNA) WGBS/WGS data. It contains many cfDNA quality control and statistical algorithms. Also we collected some useful cell free DNA references and provided them [here](https://honchkrow.github.io/cfDNAReferences/).Users can access the cfDNApipe documentation [Here](https://cfdnapipe-doc.readthedocs.io/en/latest/).
+**cfRNApipe(<u>c</u>ell <u>f</u>ree <u>RNA</u> <u>Pipe</u>line)** is an integrated pipeline for analyzing [cell-free RNA](https://en.wikipedia.org/wiki/Circulating_free_RNA) long cfRNA-seq and short cfRNA-seq data (including exosome RNA-seq). It contains many cfRNA quality control and statistical algorithms. Also we collected some useful cell free RNA references and provided them [here](https://honchkrow.github.io/cfDNAReferences/).Users can access the cfDNApipe documentation [Here](https://cfdnapipe-doc.readthedocs.io/en/latest/).
 
-The whole pipeline is established based on the processing graph principle. Users can use the preset pipeline for WGBS/WGS data as well as build their own analysis pipeline from any intermediate data like bam files. The main functions are as the following picture.
+The whole pipeline is established based on the processing graph principle. Users can use the preset pipeline for cfRNA-seq data as well as build their own analysis pipeline from any intermediate data like bam files. The main functions are as the following picture.
 
 <center>
     <img style="border-radius: 0.3125em;
@@ -61,7 +63,7 @@ The whole pipeline is established based on the processing graph principle. Users
 
 ### Section 1.1: System requirement
 
-The popular WGBS/WGS analysis toolkits are released on Unix/Linux system, based on different program languages, like FASTQC and Bowtie2. Therefore, it's very difficult to rewrite all the software in one language. Fortunately, [conda](https://docs.conda.io/en/latest/)/[bioconda](http://bioconda.github.io/) program collected many prevalent python modules and bioinformatics software, so we can install all the dependencies through [conda](https://docs.conda.io/en/latest/)/[bioconda](http://bioconda.github.io/) and arrange pipelines using python.
+The popular cfRNA-seq analysis toolkits are released on Unix/Linux system, based on different program languages, like FASTQC and Bowtie2. Therefore, it's very difficult to rewrite all the software in one language. Fortunately, [conda](https://docs.conda.io/en/latest/)/[bioconda](http://bioconda.github.io/) program collected many prevalent python modules and bioinformatics software, so we can install all the dependencies through [conda](https://docs.conda.io/en/latest/)/[bioconda](http://bioconda.github.io/) and arrange pipelines using python.
 
 We recommend using [conda/Anaconda](https://www.anaconda.com/) and create a virtual environment to manage all the dependencies. If you did not install conda before, please follow [this tutorial](https://xwanglabthu.github.io/cfDNApipe/docs/conda_installation.html) to install conda first.
 
